@@ -1,0 +1,49 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "request": "launch",
+      "name": "spark-neoforge - Client",
+      "presentation": {
+        "group": "Mod Development - spark-neoforge",
+        "order": 0
+      },
+      "projectName": "spark-neoforge",
+      "mainClass": "net.neoforged.devlaunch.Main",
+      "args": [
+        "@/home/acow/spark/spark-neoforge/build/moddev/clientRunProgramArgs.txt"
+      ],
+      "vmArgs": [
+        "@/home/acow/spark/spark-neoforge/build/moddev/clientRunVmArgs.txt",
+        "-Dfml.modFolders\u003dspark%%/home/acow/spark/spark-neoforge/bin/main"
+      ],
+      "cwd": "${workspaceFolder}/spark-neoforge/run",
+      "env": {},
+      "console": "internalConsole",
+      "shortenCommandLine": "none"
+    },
+    {
+      "type": "java",
+      "request": "launch",
+      "name": "spark-neoforge - Server",
+      "presentation": {
+        "group": "Mod Development - spark-neoforge",
+        "order": 1
+      },
+      "projectName": "spark-neoforge",
+      "mainClass": "net.neoforged.devlaunch.Main",
+      "args": [
+        "@/home/acow/spark/spark-neoforge/build/moddev/serverRunProgramArgs.txt"
+      ],
+      "vmArgs": [
+        "@/home/acow/spark/spark-neoforge/build/moddev/serverRunVmArgs.txt",
+        "-Dfml.modFolders\u003dspark%%/home/acow/spark/spark-neoforge/bin/main"
+      ],
+      "cwd": "${workspaceFolder}/spark-neoforge/run",
+      "env": {},
+      "console": "internalConsole",
+      "shortenCommandLine": "none"
+    }
+  ]
+}
